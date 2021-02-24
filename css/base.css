@@ -221,7 +221,11 @@ main::before {
 	grid-area: credits-2;
 }
 
-.credits--author div {
+.credits--deck {
+	grid-area: credits-3;
+}
+
+.credits--author div, .credits--deck div {
 	clip-path: polygon(0 0, var(--clip) 0, var(--clip) 100%, 0% 100%);	
 }
 
@@ -239,7 +243,7 @@ main::before {
 					'... ... ... title title'
 					'... ... ... ... subtitle'
 					'... menu ... content play'
-					'year ... credits-1 credits-2 ...';
+					'year ... credits-1 credits-2 credits-3';
 	}
 	.line {
 		position: relative;
