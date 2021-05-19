@@ -43,12 +43,7 @@
         <!-- div class="dib oh"><a href="#" class="dib">Previous investments</a></div -->
         <!-- div class="dib oh"><a href="#" class="dib">Thesis</a></div -->
         <div class="dib oh">
-          <a
-            href="https://slides.com/zawiasa/supernova/fullscreen?token=uiRT0xJ8"
-            class="dib"
-          >
-            Investor deck
-          </a>
+          <button class="dib" data-open-modal>Investor deck</button>
         </div>
       </nav>
       <h1 class="title line line--horizontal oh"><div>Supernova</div></h1>
@@ -65,12 +60,7 @@
         </span>
       </p>
       <span class="play dib" aria-label="Play">
-        <a
-          style="text-decoration: none"
-          href="https://slides.com/zawiasa/supernova/fullscreen?token=uiRT0xJ8"
-        >
-          &#9658;
-        </a>
+        <button style="text-decoration: none" data-open-modal>&#9658;</button>
       </span>
       <a
         class="credits credits--site line line--vertical"
@@ -82,7 +72,101 @@
       </a>
       <div class="year oh"><div>2021</div></div>
     </main>
+    <div
+      id="modalContainer"
+      class="fixed flex inset-0 z-10 overflow-y-auto pointer-events-none"
+      aria-labelledby="modal-title"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div
+        id="modalBgOverlay"
+        class="
+          fixed
+          inset-0
+          transition-opacity
+          bg-gray-800 bg-opacity-75
+          ease-out
+          duration-300
+          opacity-0
+        "
+        aria-hidden="true"
+        data-close-modal
+      ></div>
+
+      <div
+        class="
+          absolute
+          inset-0
+          m-auto
+          max-h-screen max-w-[175vh]
+          w-screen
+          h-[75vw]
+          p-2
+          sm:p-8
+        "
+        data-close-modal
+      >
+        <div
+          id="modalPanel"
+          class="
+            relative
+            h-full
+            w-full
+            transition-all
+            transform
+            bg-gray-700
+            rounded-lg
+            shadow-xl
+            sm:align-middle
+            sm:w-full
+            ease-in
+            duration-200
+            opacity-0
+            translate-y-4
+            sm:translate-y-0
+            sm:scale-95
+          "
+        >
+          <iframe
+            src="https://slides.com/zawiasa/supernova/embed?byline=hidden&share=hidden"
+            class="w-full h-full absolute inset-0 rounded-lg"
+            scrolling="no"
+            frameborder="0"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen
+            title="Pitch deck"
+          ></iframe>
+          <button
+            class="
+              flex
+              items-center
+              justify-center
+              gap-3
+              border border-transparent
+              p-3
+              rounded-full
+              hover:bg-gray-600
+              absolute
+              -top-4
+              -right-4
+              text-xl
+              bg-gray-700
+              shadow
+              hidden
+              md:flex
+            "
+            data-close-modal
+          >
+            <!-- prettier-ignore -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256" slot="icon"><rect width="256" height="256" fill="none"></rect><path d="M208.48535,191.51465a12.0001,12.0001,0,0,1-16.9707,16.9707L128,144.9707,64.48535,208.48535a12.0001,12.0001,0,0,1-16.9707-16.9707L111.0293,128,47.51465,64.48535a12.0001,12.0001,0,0,1,16.9707-16.9707L128,111.0293l63.51465-63.51465a12.0001,12.0001,0,0,1,16.9707,16.9707L144.9707,128Z"></path></svg>
+          </button>
+        </div>
+      </div>
+    </div>
 
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/modal.js"></script>
   </body>
 </html>

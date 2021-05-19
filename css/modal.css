@@ -1,0 +1,202 @@
+/* these are the relevant generated Tailwind classes from another project
+   I didn't want to pull in TW just for it, but we could in the future */
+button {
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  font: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+.pointer-events-none {
+  pointer-events: none;
+}
+.fixed {
+  position: fixed;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.inset-0 {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.-top-4 {
+  top: -1rem;
+}
+.-right-4 {
+  right: -1rem;
+}
+.z-10 {
+  z-index: 10;
+}
+.m-auto {
+  margin: auto;
+}
+.flex {
+  display: flex;
+}
+.hidden {
+  display: none;
+}
+.h-\[75vw\] {
+  height: 75vw;
+}
+.h-full {
+  height: 100%;
+}
+.max-h-screen {
+  max-height: 100vh;
+}
+.w-screen {
+  width: 100vw;
+}
+.w-full {
+  width: 100%;
+}
+.max-w-\[175vh\] {
+  max-width: 175vh;
+}
+.transform {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.translate-y-0 {
+  --tw-translate-y: 0px;
+}
+.translate-y-4 {
+  --tw-translate-y: 1rem;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.gap-3 {
+  gap: 0.75rem;
+}
+.overflow-y-auto {
+  overflow-y: auto;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+.rounded-full {
+  border-radius: 9999px;
+}
+.border {
+  border-width: 1px;
+}
+.border-transparent {
+  border-color: transparent;
+}
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(38, 38, 42, var(--tw-bg-opacity));
+}
+.bg-gray-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(64, 64, 64, var(--tw-bg-opacity));
+}
+.bg-opacity-75 {
+  --tw-bg-opacity: 0.75;
+}
+.p-2 {
+  padding: 0.5rem;
+}
+.p-3 {
+  padding: 0.75rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgba(55, 65, 81, var(--tw-text-opacity));
+}
+.opacity-100 {
+  opacity: 1;
+}
+.opacity-0 {
+  opacity: 0;
+}
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.shadow,
+.shadow-xl {
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent),
+    var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
+}
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+.transition-opacity {
+  transition-duration: 0.15s;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.transition-all {
+  transition-duration: 0.15s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.duration-200 {
+  transition-duration: 0.2s;
+}
+.duration-300 {
+  transition-duration: 0.3s;
+}
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.hover\:bg-gray-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(82, 82, 82, var(--tw-bg-opacity));
+}
+@media (min-width: 640px) {
+  .sm\:w-full {
+    width: 100%;
+  }
+  .sm\:translate-y-0 {
+    --tw-translate-y: 0px;
+  }
+  .sm\:scale-100 {
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+  }
+  .sm\:scale-95 {
+    --tw-scale-x: 0.95;
+    --tw-scale-y: 0.95;
+  }
+  .sm\:p-8 {
+    padding: 2rem;
+  }
+  .sm\:align-middle {
+    vertical-align: middle;
+  }
+}
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+}
