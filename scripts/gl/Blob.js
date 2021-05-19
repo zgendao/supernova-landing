@@ -1,6 +1,6 @@
-import * as THREE from 'three';
-import vertexShader from './shaders/vertex.glsl';
-import fragmentShader from './shaders/fragment.glsl';
+import * as THREE from "three";
+import vertexShader from "./shaders/vertex.glsl";
+import fragmentShader from "./shaders/fragment.glsl";
 
 export default class Blob extends THREE.Object3D {
   constructor(size, speed, color, density, strength, offset) {
@@ -25,7 +25,7 @@ export default class Blob extends THREE.Object3D {
         uAlpha: { value: 1.0 },
       },
       defines: {
-        PI: Math.PI
+        PI: Math.PI,
       },
       // wireframe: true,
       // side: THREE.DoubleSide
